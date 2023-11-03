@@ -22,7 +22,7 @@ skills объект с рандомными значениями от 1 до 100
 input: ['hook', 'blackhole']
 output: {'hook': 20, 'blackhole: 100'}
 */
-// let skills = ['code','solve','multitask','dance','play'];
+// const skills = ['code','solve','multitask','dance','play'];
 // const skillsWithRandomNum = skills.reduce((obj, skill) => {
 //     return {
 //         ...obj,
@@ -34,7 +34,7 @@ output: {'hook': 20, 'blackhole: 100'}
 /*
 Дан произвольный массив из чисел больше 0
 с помощью reduce посчитать сумму четных и нечетных чисел.
-    input: [1,2,3,4,5,6,7,8,9,10,11, 100, 200, 300]
+input: [1,2,3,4,5,6,7,8,9,10,11, 100, 200, 300]
 output: { even: 100, odd: 100 }
 */
 // 100 это для примера, сумма должна высчитываться.
@@ -59,19 +59,22 @@ output: { even: 100, odd: 100 }
 Создайте новый массив, который будет содержать только имена мастеров из Хаффлпаффа.
     Сделайте эту задачу двуми способоами:
  */
-// let harryArray =
-//     [ { name: 'Harry Potter', house: 'Gryfindor' },
+// const harryArray =
+//     [
+//     { name: 'Harry Potter', house: 'Gryfindor' },
 //     { name: 'Cedric Diggory', house: 'Hufflepuff' },
 //     { name: 'Tonks', house: 'Hufflepuff' },
 //     { name: 'Ronald Weasley', house: 'Gryfindor' },
-//     { name: 'Hermione Granger', house: 'Gryfindor' }];
-// const hupplepuff = harryArray.filter(item => item.house === 'Hufflepuff')
-//     .map(item => item.name);
+//     { name: 'Hermione Granger', house: 'Gryfindor' }
+//     ];
+// const hupplepuff = harryArray
+// .filter(item => item.house === 'Hufflepuff')
+// .map(item => item.name);
 // console.log(hupplepuff);
 //
 // const hufflepuff2 = harryArray.reduce((arr, item) => {
 //     if(item.house === 'Hufflepuff'){
-//         return [...arr, item.name];
+//         arr.push(item.name);
 //     }
 //     return arr;
 // }, []);
@@ -85,9 +88,9 @@ output: { even: 100, odd: 100 }
     От большего к меньшему
 От меньшего к большему
 */
-// let numbers = [3, 4, 1, 2, 7];
+// const numbers = [3, 4, 1, 2, 7];
 // const increaseToDecrease = numbers.slice().sort((a,b) => (a - b));
-// const decreaseToIncrease = numbers.sort((a,b) => (b - a));
+// const decreaseToIncrease = numbers.slice().sort((a,b) => (b - a));
 // console.log(increaseToDecrease);
 // console.log(decreaseToIncrease);
 
@@ -100,16 +103,16 @@ output: { even: 100, odd: 100 }
 */
 // const fruits = ['apple', 'orange','kiwi','plum','banana','melon','watermelon'];
 // const A_Z_sort = fruits.slice().sort(function(a,b) {
-//     let fruitA = a.toLowerCase();
-//     let fruitB = b.toLowerCase();
+//     const fruitA = a.toLowerCase();
+//     const fruitB = b.toLowerCase();
 //     if(fruitA > fruitB) return 1;
 //     if(fruitA < fruitB) return -1;
 //     return 0;
 // })
 //
 // const Z_A_sort = fruits.sort(function(a,b) {
-//     let fruitA = a.toLowerCase();
-//     let fruitB = b.toLowerCase();
+//     const fruitA = a.toLowerCase();
+//     const fruitB = b.toLowerCase();
 //     if(fruitA > fruitB) return -1;
 //     if(fruitA < fruitB) return 1;
 //     return 0;
